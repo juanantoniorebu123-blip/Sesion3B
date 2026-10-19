@@ -12,6 +12,7 @@ import Sesion3B.Cuenta;
 
 class CuentaTest {
 
+	Cuenta cuenta;
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -24,6 +25,7 @@ class CuentaTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		 cuenta=new Cuenta();
 	}
 
 	@AfterEach
@@ -32,12 +34,14 @@ class CuentaTest {
 
 	@Test
 	void testIngresar() {
-		assertEquals(60,Cuenta.ingresar(60));
+		cuenta.ingresar(60);
+		assertEquals(60,cuenta.getSaldo());
 	}
 	
 	@Test
 	void testRetirar() {
-		assertEquals(60,Cuenta.retirar(60));
+		cuenta.retirar(-60);
+		assertEquals(-60,cuenta.getSaldo());
 	}
 
 }
