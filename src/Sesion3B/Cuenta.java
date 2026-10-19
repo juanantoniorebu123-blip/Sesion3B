@@ -5,5 +5,7 @@ public class Cuenta {
     String nTitular; 
     List <Movimiento> mMovimientos;
 
+    public void ingresar(double x) {}
+    public void retirar(double x) {}
 
 }
