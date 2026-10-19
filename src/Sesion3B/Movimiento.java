@@ -2,9 +2,8 @@ package Sesion3B;
 
 public class Movimiento {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+	public double importe;
+	public enum TipoEmpleado{D,H};
+	public String Detalle;
 
 }

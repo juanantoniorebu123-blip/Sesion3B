@@ -8,10 +8,14 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import Sesion3B.Cuenta;
+
 class CuentaTest {
 
+	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		
 	}
 
 	@AfterAll
@@ -27,7 +31,12 @@ class CuentaTest {
 	}
 
 	@Test
-	void test() {
+	void testIngresar() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testRetirar() {
 		fail("Not yet implemented");
 	}
 
