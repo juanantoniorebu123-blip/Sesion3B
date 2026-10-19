@@ -32,12 +32,12 @@ class CuentaTest {
 
 	@Test
 	void testIngresar() {
-		fail("Not yet implemented");
+		assertEquals(60,Cuenta.ingresar(60));
 	}
 	
 	@Test
 	void testRetirar() {
-		fail("Not yet implemented");
+		assertEquals(60,Cuenta.retirar(60));
 	}
 
 }
